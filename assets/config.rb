@@ -1,11 +1,21 @@
 # Require any additional compass plugins here.
 add_import_path "bower_components/foundation/scss"
 
+# Autoprefixer
+require 'autoprefixer-rails'
+
+on_stylesheet_saved do |file|
+    css = File.read(file)
+    File.open(file, 'w') do |io|
+        io << AutoprefixerRails.process(css)
+    end
+end
+
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "stylesheets"
+css_dir = "css"
 sass_dir = "scss"
-images_dir = "images"
+images_dir = "img"
 javascripts_dir = "js"
 
 # You can select your preferred output style here (can be overridden via the command line):
