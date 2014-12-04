@@ -38,3 +38,98 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+// Palette =====================================================================
+
+	// Origin Palette
+	$white: rgba(255,255,255,1);
+	$grey: rgba(225,225,225,1);
+	$black: rgba(30,30,30,1);
+
+	// Norex Palette
+	$primary: rgba(213,30,73,1);    // magenta
+	$accent: rgba(102,36,43,1);     // maroon
+
+	// In/Out Palette
+	$in: rgba(142, 218, 134,1);		// green
+
+// Base Style ==================================================================
+
+	html, body {
+		height: 100vh;
+		overflow-x: scroll;
+		width: 100vw;
+	}
+
+// Header Style ================================================================
+
+	header {
+		background: $primary;
+		position: fixed;
+			top: 0;
+		height: 20vh;
+		width: 100vw;
+		z-index: 100;
+	}
+
+// Name Block Styles ===========================================================
+
+	.person {
+		background: $grey;
+		border-bottom: 3px solid $white;
+		overflow: hidden;
+		padding: 5vh;
+		position: relative;
+
+		&:first-of-type {
+			border-top: 3px solid $white;
+			margin: 20vh 0 0 0;
+		}
+
+		h1 {
+			color: $white;
+			font-size: 5rem;
+			position: relative;
+			text-transform: uppercase;
+			z-index: 5;
+		}
+
+		img {
+			height: 30vh;
+			position: absolute;
+				top: -5vh;
+				right: -3vw;
+
+			&.img-in {
+				opacity: 0;
+				transition: all 0.5s ease;
+			}
+
+		}
+
+		.in {
+			background: $in;
+			height: 100%;
+			position: absolute;
+				top: 0vw;
+				left: 100vw;
+			transition: all 0.5s ease 0.5s;
+			width: 100vw;
+			z-index: 0;
+		}
+
+		&.active {
+
+			.img-in {
+				opacity: 1;
+				transition: all 0.5s ease 1s;
+			}
+
+			.in {
+					left: 0vw;
+				transition: all 0.5s ease 0.5s;
+			}
+
+		}
+
+	}

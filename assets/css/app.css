@@ -9022,3 +9022,78 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 58, ../scss/app.scss */
+html, body {
+  height: 100vh;
+  overflow-x: scroll;
+  width: 100vw;
+}
+
+/* line 66, ../scss/app.scss */
+header {
+  background: #d51e49;
+  position: fixed;
+  top: 0;
+  height: 20vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+/* line 77, ../scss/app.scss */
+.person {
+  background: #e1e1e1;
+  border-bottom: 3px solid white;
+  overflow: hidden;
+  padding: 5vh;
+  position: relative;
+}
+/* line 84, ../scss/app.scss */
+.person:first-of-type {
+  border-top: 3px solid white;
+  margin: 20vh 0 0 0;
+}
+/* line 89, ../scss/app.scss */
+.person h1 {
+  color: white;
+  font-size: 5rem;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 5;
+}
+/* line 97, ../scss/app.scss */
+.person img {
+  height: 30vh;
+  position: absolute;
+  top: -5vh;
+  right: -3vw;
+}
+/* line 103, ../scss/app.scss */
+.person img.img-in {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+/* line 110, ../scss/app.scss */
+.person .in {
+  background: #8eda86;
+  height: 100%;
+  position: absolute;
+  top: 0vw;
+  left: 100vw;
+  -webkit-transition: all 0.5s ease 0.5s;
+          transition: all 0.5s ease 0.5s;
+  width: 100vw;
+  z-index: 0;
+}
+/* line 123, ../scss/app.scss */
+.person.active .img-in {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 1s;
+          transition: all 0.5s ease 1s;
+}
+/* line 128, ../scss/app.scss */
+.person.active .in {
+  left: 0vw;
+  -webkit-transition: all 0.5s ease 0.5s;
+          transition: all 0.5s ease 0.5s;
+}
