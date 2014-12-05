@@ -20,3 +20,18 @@ $(document).foundation();
 	var headerHeight = $('header').outerHeight();
 
 	$('#firstPerson').css('margin-top', headerHeight + 'px');
+
+// Click Response ==============================================================
+
+	$('.person').click(function(event) {
+
+		var clickDimension = $('.click-response').outerHeight() / 2;
+		var topOffset = $('.person').offset().top;
+
+		$(this).find('.click-response').css('position', 'absolute').css('top', event.pageY - topOffset - clickDimension).css('left', event.pageX - clickDimension);
+		$(this).find('.click-response').addClass('active clicked');
+		setTimeout(function() {
+			$('.clicked').removeClass('active clicked');
+		}, 200);
+
+	});

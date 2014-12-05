@@ -9087,6 +9087,32 @@ header h1 {
           transition: all 0.5s ease;
 }
 /* line 127, ../scss/app.scss */
+.person .click-response {
+  background: white;
+  border-radius: 100px;
+  font-smoothing: subpixel-antialiased;
+  height: 5vw;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(1) translateZ(1px);
+          transform: scale(1) translateZ(1px);
+  -webkit-transition: opacity 0.1s ease, -webkit-transform 0.1s ease;
+          transition: opacity 0.1s ease, transform 0.1s ease;
+  width: 5vw;
+  z-index: 500;
+}
+/* line 141, ../scss/app.scss */
+.person .click-response.active {
+  font-smoothing: subpixel-antialiased;
+  opacity: 0.5;
+  -webkit-transform: scale(4) translateZ(1px);
+          transform: scale(4) translateZ(1px);
+  -webkit-transition: opacity 0.15s ease, -webkit-transform 0.1s ease;
+          transition: opacity 0.15s ease, transform 0.1s ease;
+}
+/* line 150, ../scss/app.scss */
 .person .in {
   background: #8eda86;
   height: 100%;
@@ -9098,13 +9124,13 @@ header h1 {
   width: 100vw;
   z-index: 0;
 }
-/* line 140, ../scss/app.scss */
+/* line 163, ../scss/app.scss */
 .person.active .img-in {
   opacity: 1;
   -webkit-transition: all 0.5s ease 0.5s;
           transition: all 0.5s ease 0.5s;
 }
-/* line 145, ../scss/app.scss */
+/* line 168, ../scss/app.scss */
 .person.active .in {
   left: 0vw;
   -webkit-transition: all 0.5s ease;
