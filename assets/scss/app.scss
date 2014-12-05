@@ -53,12 +53,22 @@
 	// In/Out Palette
 	$in: rgba(142, 218, 134,1);		// green
 
+// Fonts =======================================================================
+
+	$roboto: 'Roboto', sans-serif;
+
 // Base Style ==================================================================
 
 	html, body {
 		height: 100vh;
 		overflow-x: scroll;
 		width: 100vw;
+	}
+
+// Typography ==================================================================
+
+	h1, h2, h3, h4, h5, h6, p, a, ul, li {
+		font-family: $roboto;
 	}
 
 // Header Style ================================================================
@@ -101,6 +111,7 @@
 		h1 {
 			color: $white;
 			font-size: 5rem;
+			font-weight: 100;
 			position: relative;
 			text-transform: uppercase;
 			z-index: 5;
