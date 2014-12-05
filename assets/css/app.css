@@ -9037,13 +9037,14 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 /* line 76, ../scss/app.scss */
 header {
   background: #d51e49;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   height: 20vh;
   width: 100vw;
   z-index: 100;
 }
-/* line 84, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 header h1 {
   color: white;
   display: block;
@@ -9057,7 +9058,7 @@ header h1 {
   width: 100%;
 }
 
-/* line 99, ../scss/app.scss */
+/* line 100, ../scss/app.scss */
 .person {
   background: #e1e1e1;
   border-bottom: 3px solid white;
@@ -9065,9 +9066,8 @@ header h1 {
   padding: 5vh;
   position: relative;
 }
-/* line 106, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 .person:first-of-type {
-  border-top: 3px solid white;
   margin: 20vh 0 0 0;
 }
 /* line 111, ../scss/app.scss */

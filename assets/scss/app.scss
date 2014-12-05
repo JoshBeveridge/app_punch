@@ -75,6 +75,7 @@
 
 	header {
 		background: $primary;
+		box-shadow: 0 6px 6px rgba(0,0,0,.5);
 		position: fixed;
 			top: 0;
 		height: 20vh;
@@ -104,7 +105,6 @@
 		position: relative;
 
 		&:first-of-type {
-			border-top: 3px solid $white;
 			margin: 20vh 0 0 0;
 		}
 
