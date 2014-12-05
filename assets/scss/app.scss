@@ -70,6 +70,18 @@
 		height: 20vh;
 		width: 100vw;
 		z-index: 100;
+
+		h1 {
+			color: $white;
+			display: block;
+			font-size: 3rem;
+			position: relative;
+				top: 50%;
+			text-align: center;
+			transform: translateY(-50%);
+			width: 100%;
+		}
+
 	}
 
 // Name Block Styles ===========================================================
@@ -95,10 +107,11 @@
 		}
 
 		img {
-			height: 30vh;
 			position: absolute;
-				top: -5vh;
-				right: -3vw;
+				top: 50%;
+				right: -5vw;
+			transform: translateY(-50%);
+			width: 50vw;
 
 			&.img-in {
 				opacity: 0;

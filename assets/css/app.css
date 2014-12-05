@@ -9038,8 +9038,21 @@ header {
   width: 100vw;
   z-index: 100;
 }
+/* line 74, ../scss/app.scss */
+header h1 {
+  color: white;
+  display: block;
+  font-size: 3rem;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
 
-/* line 77, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 .person {
   background: #e1e1e1;
   border-bottom: 3px solid white;
@@ -9047,12 +9060,12 @@ header {
   padding: 5vh;
   position: relative;
 }
-/* line 84, ../scss/app.scss */
+/* line 96, ../scss/app.scss */
 .person:first-of-type {
   border-top: 3px solid white;
   margin: 20vh 0 0 0;
 }
-/* line 89, ../scss/app.scss */
+/* line 101, ../scss/app.scss */
 .person h1 {
   color: white;
   font-size: 5rem;
@@ -9060,20 +9073,23 @@ header {
   text-transform: uppercase;
   z-index: 5;
 }
-/* line 97, ../scss/app.scss */
+/* line 109, ../scss/app.scss */
 .person img {
-  height: 30vh;
   position: absolute;
-  top: -5vh;
-  right: -3vw;
+  top: 50%;
+  right: -5vw;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50vw;
 }
-/* line 103, ../scss/app.scss */
+/* line 116, ../scss/app.scss */
 .person img.img-in {
   opacity: 0;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
-/* line 110, ../scss/app.scss */
+/* line 123, ../scss/app.scss */
 .person .in {
   background: #8eda86;
   height: 100%;
@@ -9085,13 +9101,13 @@ header {
   width: 100vw;
   z-index: 0;
 }
-/* line 123, ../scss/app.scss */
+/* line 136, ../scss/app.scss */
 .person.active .img-in {
   opacity: 1;
   -webkit-transition: all 0.5s ease 0.5s;
           transition: all 0.5s ease 0.5s;
 }
-/* line 128, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .person.active .in {
   left: 0vw;
   -webkit-transition: all 0.5s ease;
