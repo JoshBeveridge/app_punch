@@ -26,7 +26,7 @@ $(document).foundation();
 	$('.person').on("touchStart click", function(event) {
 
 		var clickDimension = $('.click-response').outerHeight() / 2;
-		var topOffset = $('.person').offset().top;
+		var topOffset = $(this).offset().top;
 
 		$(this).find('.click-response').css('position', 'absolute').css('top', event.pageY - topOffset - clickDimension).css('left', event.pageX - clickDimension);
 		$(this).find('.click-response').addClass('active clicked');
