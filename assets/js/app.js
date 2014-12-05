@@ -14,3 +14,9 @@ $(document).foundation();
 		}
 
 	});
+
+// Applying header height to firstName margin-top ==============================
+
+	var headerHeight = $('header').outerHeight();
+
+	$('#firstPerson').css('margin-top', headerHeight + 'px');

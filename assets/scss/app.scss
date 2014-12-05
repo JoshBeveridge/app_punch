@@ -76,9 +76,9 @@
 	header {
 		background: $primary;
 		box-shadow: 0 6px 6px rgba(0,0,0,.5);
+		padding: 5vh;
 		position: fixed;
 			top: 0;
-		height: 20vh;
 		width: 100vw;
 		z-index: 100;
 
@@ -86,10 +86,7 @@
 			color: $white;
 			display: block;
 			font-size: 3rem;
-			position: relative;
-				top: 50%;
 			text-align: center;
-			transform: translateY(-50%);
 			width: 100%;
 		}
 
@@ -103,10 +100,6 @@
 		overflow: hidden;
 		padding: 5vh;
 		position: relative;
-
-		&:first-of-type {
-			margin: 20vh 0 0 0;
-		}
 
 		h1 {
 			color: $white;
