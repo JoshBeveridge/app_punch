@@ -9088,12 +9088,12 @@ header {
 /* line 123, ../scss/app.scss */
 .person.active .img-in {
   opacity: 1;
-  -webkit-transition: all 0.5s ease 1s;
-          transition: all 0.5s ease 1s;
+  -webkit-transition: all 0.5s ease 0.5s;
+          transition: all 0.5s ease 0.5s;
 }
 /* line 128, ../scss/app.scss */
 .person.active .in {
   left: 0vw;
-  -webkit-transition: all 0.5s ease 0.5s;
-          transition: all 0.5s ease 0.5s;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }

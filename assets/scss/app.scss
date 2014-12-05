@@ -122,12 +122,12 @@
 
 			.img-in {
 				opacity: 1;
-				transition: all 0.5s ease 1s;
+				transition: all 0.5s ease 0.5s;
 			}
 
 			.in {
 					left: 0vw;
-				transition: all 0.5s ease 0.5s;
+				transition: all 0.5s ease;
 			}
 
 		}
