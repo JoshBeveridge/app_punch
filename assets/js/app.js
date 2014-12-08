@@ -35,3 +35,7 @@ $(document).foundation();
 		}, 200);
 
 	});
+
+window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);
