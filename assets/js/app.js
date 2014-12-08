@@ -23,7 +23,7 @@ $(document).foundation();
 
 // Click Response ==============================================================
 
-	$('.person').on("touchStart click", function(event) {
+	$('.person').on("touchend click", function(event) {
 
 		var clickDimension = $('.click-response').outerHeight() / 2;
 		var topOffset = $(this).offset().top;
@@ -35,7 +35,3 @@ $(document).foundation();
 		}, 200);
 
 	});
-
-window.addEventListener('load', function() {
-    new FastClick(document.body);
-}, false);
