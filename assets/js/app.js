@@ -17,9 +17,15 @@ $(document).foundation();
 
 // Applying header height to firstName margin-top ==============================
 
-	var headerHeight = $('header').outerHeight();
+	function setHeaderMargin(){
+		var headerHeight = $('header').outerHeight();
 
-	$('#firstPerson').css('margin-top', headerHeight + 'px');
+		$('.person').first().css('margin-top', headerHeight + 'px');
+	}
+
+	setHeaderMargin();
+
+	$(window).on('resize', setHeaderMargin);
 
 // Click Response ==============================================================
 
@@ -29,13 +35,23 @@ $(document).foundation();
 		var topOffset = $(this).offset().top;
 
 		$(this).find('.click-response').css('position', 'absolute').css('top', event.pageY - topOffset - clickDimension).css('left', event.pageX - clickDimension);
-		$(this).find('.click-response').addClass('active clicked');
+
 		setTimeout(function() {
 			$('.clicked').removeClass('active clicked');
 		}, 200);
 
+		$.ajax({
+			url: 'functions.php',
+			type: 'GET',
+			data: {action: 'changeStatus', userid: $(this).data('userid'), dir: ($(this).hasClass('active') ? 'in' : 'out')}
+		}).done(function(msg) {
+			console.log(msg);
+		});
+
+		$(this).find('.click-response').addClass('active clicked');
+
 	});
 
-window.addEventListener('load', function() {
+/*window.addEventListener('load', function() {
     new FastClick(document.body);
-}, false);
+}, false);*/
