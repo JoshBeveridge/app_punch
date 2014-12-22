@@ -9078,7 +9078,7 @@ header h1 {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 50vw;
+  width: 75vw;
 }
 /* line 120, ../scss/app.scss */
 .person img.img-in {
@@ -9106,11 +9106,11 @@ header h1 {
 /* line 141, ../scss/app.scss */
 .person .click-response.active {
   font-smoothing: subpixel-antialiased;
-  opacity: 0.5;
+  opacity: 0.3;
   -webkit-transform: scale(4) translateZ(1px);
           transform: scale(4) translateZ(1px);
-  -webkit-transition: opacity 0.15s ease, -webkit-transform 0.1s ease;
-          transition: opacity 0.15s ease, transform 0.1s ease;
+  -webkit-transition: opacity 0.1s ease, -webkit-transform 0.1s ease;
+          transition: opacity 0.1s ease, transform 0.1s ease;
 }
 /* line 150, ../scss/app.scss */
 .person .in {
