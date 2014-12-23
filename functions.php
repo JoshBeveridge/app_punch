@@ -99,7 +99,7 @@ function getUsers(){
 
 	$users = array();
 
-	$sql = "SELECT id, shortname, icon, status FROM users";
+	$sql = "SELECT id, shortname, icon, status FROM users ORDER BY shortname ASC";
 
 	foreach($conn->query($sql) as $row){
 		$users[$row['id']] = $row;
